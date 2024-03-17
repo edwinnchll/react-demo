@@ -1,38 +1,161 @@
 .App {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh; /* Ensure full height of viewport */
+}
+
+
+.sidebar {
+  width: 200px;
+  background-color: rgb(129, 11, 226);
+  color: #fff;
+  padding: 20px;
+}
+.card a {
+  color: #fff; /* Set text color to white */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.top-right .card-container{
+  width : 400px;
+  height : 250px;
+}
+.bottom-right .card{
+  height : 100px;
+}
+.bottom-right > .card:hover {
+  background-color: white; /* Highlight color on hover */
+}
+
+.card {
+  padding: 10px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+.card-container{
+  padding: 10px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+.card:hover {
+  background-color: rgb(147, 27, 245); /* Highlight color on hover */
+}
+.container {
+  flex: 1;
+  max-width: calc(100% - 200px);
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+.weather-heading {
+  text-align: justify;
+  color: #333;
+}
+.weather-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.weather-info div {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Description-head{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.top-left {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top-right {
+  flex:1;
+  margin-left : 10px;
+}
+
+.bottom-section {
+  display: flex;
+  margin-top: 20px;
+}
+
+.bottom-left {
+  flex: 1;
+}
+
+.bottom-right {
+  flex: 2;
+  
+}
+
+.small-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weather-cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+.weather-cards .card {
+  flex: 1;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+.small-cards .card {
+  flex: 1;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.small-cards .card:hover {
+  background-color: rgb(129, 11, 226);
+}
+
+.top-Temp {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 25px;
+}
+
+/* Top right text */
+.top-Date {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+.Image-container{
+  position: relative;
+  border-radius: 15px;
+}
+img{
+  border-radius: 15px;
 }
