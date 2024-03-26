@@ -82,3 +82,10 @@
 [2024-03-25T21:43:25.844] [ERROR] xdiva - Connection error with gdb plugin: connect ECONNREFUSED 127.0.0.1:8008
 [2024-03-25T21:43:25.908] [INFO] xdiva - Connection closed with gdb plugin.
 [2024-03-25T21:43:25.908] [INFO] xdiva - Connection closed with viewer.
+[2024-03-26T12:00:11.611] [INFO] xdiva - xDIVA app initializing...
+[2024-03-26T12:00:11.612] [INFO] xdiva - Trying to connect with gdb plugin...
+[2024-03-26T12:00:11.613] [INFO] xdiva - Trying to connect with viewer...
+[2024-03-26T12:00:11.665] [ERROR] xdiva - Connection error with gdb plugin: connect ECONNREFUSED 127.0.0.1:8008
+[2024-03-26T12:00:11.666] [ERROR] xdiva - Connection error with viewer: connect ECONNREFUSED 127.0.0.1:11223
+[2024-03-26T12:00:11.667] [INFO] xdiva - Connection closed with viewer.
+[2024-03-26T12:00:11.667] [INFO] xdiva - Connection closed with gdb plugin.
