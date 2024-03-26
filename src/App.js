@@ -45,10 +45,10 @@ function Home() {
   }, []);
 
   const weatherBackgrounds = {
-    Clear: "background3",
-    Clouds: "background1",
-    Overcast: "background1",
-    Rain: "background2", // You can add more mappings for different weather conditions
+    Clear: background3,
+    Clouds: background1,
+    Overcast: background1,
+    Rain: background2, // You can add more mappings for different weather conditions
     // Add mappings for other weather conditions as needed
   };
 
